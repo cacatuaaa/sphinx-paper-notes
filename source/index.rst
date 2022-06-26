@@ -9,10 +9,9 @@ Welcome to paper-notes's documentation!
 .. toctree::
    :maxdepth: 1
    :caption: 2022-06:
-   :numbered:
    
-   /2022-06/Title.md
-   /2022-06/title2.md
+   /2022-06/paper-20220626.md
+   /2022-06/template.md
 
 Indices and tables
 ==================

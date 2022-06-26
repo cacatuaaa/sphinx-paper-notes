@@ -5,6 +5,7 @@
 - Reading date:
 - Author:
 - Affiliation:
+- Tag: 
 
 ## Overview(どんな論文)
 
