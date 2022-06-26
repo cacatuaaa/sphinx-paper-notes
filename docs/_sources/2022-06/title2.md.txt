@@ -1,0 +1,19 @@
+# Title
+
+## 論文の情報
+
+- Reading date:
+- Author:
+- Affiliation:
+
+## Overview(どんな論文)
+
+## 先行研究との比較
+
+## Key Ideas
+
+## Evaluation method
+
+## Any Discussion
+
+## Next papers to read
