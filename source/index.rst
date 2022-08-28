@@ -10,7 +10,7 @@ Welcome to paper-notes's documentation!
    :maxdepth: 1
    :caption: 2022-06:
    
-   /2022-06/paper-20220626.md
+   /2022-06/paper-20220629.md
    /2022-06/template.md
 
 Indices and tables

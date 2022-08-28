@@ -8,7 +8,7 @@
 - Rating: ★☆☆☆☆
 - Tag: #Transformer, #Video prediction, 
 
-## Overview(どんな論文)
+## Overview
 
 ## 先行研究との比較
 

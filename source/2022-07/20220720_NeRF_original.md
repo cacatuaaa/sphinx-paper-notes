@@ -1,14 +1,14 @@
-# Template
+# NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis
 
 ## 論文の情報
 
-- Reading date:
+- Reading date: 2022/07/20
 - Author:
 - Affiliation:
 - Rating: ★☆☆☆☆
 - Tag: #Transformer, #Video prediction, 
 
-## Overview(どんな論文)
+## Overview
 
 ## 先行研究との比較
 
