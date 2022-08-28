@@ -11,6 +11,11 @@ Welcome to paper-notes's documentation!
    :caption: 2022-06:
    
    /2022-06/paper-20220629.md
+.. toctree::
+   :maxdepth: 1
+   :caption: 2022-07:
+   
+   /2022-07/20220720_NeRF_original.md
    /2022-06/template.md
 
 Indices and tables
