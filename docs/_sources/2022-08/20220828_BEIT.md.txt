@@ -1,0 +1,42 @@
+# BEIT: BERT Pre-Training of Image Transformers
+
+## 論文の情報
+
+- Reading date: 
+- Author: Hangbo Bao, Li Dong, Furu Wei
+- Affiliation: Microsoft Research
+- Rating: ★★★★★
+- Tag: #Transformer
+
+## Overview
+BERTで用いられているトークンに対してマスクをかけて、その部分を推定させるという学習手法をViTにも適用させた。画像のピクセルをそのまま推定させるのではなく、tokennizerによってVisual Tokensを作成し、対応するパッチのvisual tokenを推定させるような機構にしている。
+## 先行研究との比較
+1. Ramesh et al., 2021
+   ピクセルを直接推定するように学習させると近い距離の依存関係と高い周波数を先に習得して、良い結果にならないということと、VAEを用いたvisual tokenize手法を試している研究。本論文と異なり、zero shot text-to-imageで検証されている。
+## Key Ideas
+1. Visual Token
+   Ramesh et al., 2021と使われているものをそのまま利用している。画像パッチごとに1-8192のトークンに変換される。このままでは非連続なのでGumble-softmax relaxationを使って微分可能にしている。
+2. Backbone Network
+   ViTの論文(Dosovitskiy et al., 2020)と同様にVaswani et al., 2017の標準的なトランスフォーマーを使用。
+3. BEITのPre-Training方法
+   40%ぐらいのパッチがマスクされる陽に学習させている。
+4. 
+## Evaluation method
+1. Image classifcation
+2. Semantic segmentation
+## Any Discussion
+
+## Next papers to read
+
+## メモ書き
+
+### Introduction
+
+### Introduction
+
+### ee
+
+### aaa
+
+### rere
+
