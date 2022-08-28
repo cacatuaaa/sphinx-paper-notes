@@ -1,0 +1,33 @@
+# Weakly supervised individual ganglion cell segmentation from adaptive optics OCT images for glaucomatous damage assessment
+
+## 論文の情報
+
+- Reading date: 2022/06/29
+- Author: Somayyeh Soltanian-Zadeh, Sina Farsiu
+- Affiliation: Duke Univ :duck:
+- Rating: ★☆☆☆☆
+- Tag: #segmentation
+
+## Overview(どんな論文)
+
+## 先行研究との比較
+
+## Key Ideas
+
+## Evaluation method
+
+## Any Discussion
+
+## Next papers to read
+
+## メモ書き
+
+### Introduction
+
+1. 緑内障の診断
+   GCの隆起が起きても、本当に緑内障患者であるのは半分ぐらい。
+   GCCの厚さを測る方法も提案されているが、細胞の下の荒い凝集しか計測できないので、細胞レベルのサイズ感の形態的な変化は観察できない。
+2. AO-OCTによる緑内障診断の問題点
+   1. Subjective
+   2. time-consuming
+   3. not practical for large-scale studies and clinical use
