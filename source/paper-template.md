@@ -1,4 +1,4 @@
-# Template
+# Title
 
 ## 論文の情報
 

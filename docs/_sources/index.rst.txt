@@ -8,6 +8,12 @@ Welcome to paper-notes's documentation!
 
 .. toctree::
    :maxdepth: 1
+   :caption: 2022-09:
+   
+   /2022-09/20220903_MAE.md
+
+.. toctree::
+   :maxdepth: 1
    :caption: 2022-08:
 
    /2022-08/20220828_BEIT.md

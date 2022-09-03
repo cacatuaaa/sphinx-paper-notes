@@ -1,0 +1,14 @@
+# Maked Autoencoders Are Scalable Vision Learnears
+
+## 論文の情報
+
+- Reading date: 2022/09/03
+- Author: Kaiming He, Xinlei Chen, Saining Xie, Yanghao Li, Piotr Dollár, Ross Girshick
+- Affiliation: Facebook AI Research
+- Rating: ★★★★☆
+- Tag: #Transformer, #self-supervised learning 
+- [Link](https://arxiv.org/abs/2111.06377 "Arxiv")
+
+## Overview
+This paper was published just after the BEIT. They did quite similar things to the BEIT, but some parts are different which leads better performances on ImageNet evalation and transfer learning experiments.<br>
+The main two differences are (1) MAE does not use any tokenizer, and (2) masked patches are not input to the encoder.
