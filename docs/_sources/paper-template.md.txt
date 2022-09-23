@@ -6,7 +6,8 @@
 - Author:
 - Affiliation:
 - Rating: ★☆☆☆☆
-- Tag: #Transformer, #Video prediction, 
+- Tag: #Transformer, #Video prediction
+- [Link](__URL__ "Arxiv")
 
 ## Overview
 

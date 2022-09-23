@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Maked Autoencoders Are Scalable Vision Learnears &#8212; paper-notes  ドキュメント</title>
+    <title>Test-Time Training with Masked Autoencoders &#8212; paper-notes  ドキュメント</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
@@ -17,8 +17,6 @@
     <script src="../_static/translations.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
-    <link rel="next" title="BEIT: BERT Pre-Training of Image Transformers" href="../2022-08/20220828_BEIT.html" />
-    <link rel="prev" title="Welcome to paper-notes&#39;s documentation!" href="../index.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
@@ -35,23 +33,56 @@
 
           <div class="body" role="main">
             
-  <section id="maked-autoencoders-are-scalable-vision-learnears">
-<h1>Maked Autoencoders Are Scalable Vision Learnears<a class="headerlink" href="#maked-autoencoders-are-scalable-vision-learnears" title="Permalink to this heading">¶</a></h1>
+  <section id="test-time-training-with-masked-autoencoders">
+<h1>Test-Time Training with Masked Autoencoders<a class="headerlink" href="#test-time-training-with-masked-autoencoders" title="Permalink to this heading">¶</a></h1>
 <section id="id1">
 <h2>論文の情報<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
-<li><p>Reading date: 2022/09/03</p></li>
-<li><p>Author: Kaiming He, Xinlei Chen, Saining Xie, Yanghao Li, Piotr Dollár, Ross Girshick</p></li>
-<li><p>Affiliation: Facebook AI Research</p></li>
-<li><p>Rating: ★★★★☆</p></li>
-<li><p>Tag: #Transformer, #self-supervised learning</p></li>
-<li><p><a class="reference external" href="https://arxiv.org/abs/2111.06377">Link</a></p></li>
+<li><p>Reading date: 2022/09/23</p></li>
+<li><p>Author: Yossi Grandelsman, Yu Sun, Xiniei Chen and Alexei A. Efros</p></li>
+<li><p>Affiliation:UC Berkeley</p></li>
+<li><p>Rating: ★★★☆☆</p></li>
+<li><p>Tag: #Transformer, #Video prediction</p></li>
+<li><p><span class="xref myst">Link</span></p></li>
 </ul>
 </section>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
-<p>This paper was published just after the BEIT. They did quite similar things to the BEIT, but some parts are different which leads better performances on ImageNet evalation and transfer learning experiments.<br>
-The main two differences are (1) MAE does not use any tokenizer, and (2) masked patches are not input to the encoder.</p>
+<p>Test-time trainingとはtrainingとtestのデータ分布が異なるときにそのtestデータに対して、新たに一から学習させることなく
+モデルを適応させる手法である。以下略</p>
+</section>
+<section id="id2">
+<h2>先行研究との比較<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="key-ideas">
+<h2>Key Ideas<a class="headerlink" href="#key-ideas" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="evaluation-method">
+<h2>Evaluation method<a class="headerlink" href="#evaluation-method" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="any-discussion">
+<h2>Any Discussion<a class="headerlink" href="#any-discussion" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="next-papers-to-read">
+<h2>Next papers to read<a class="headerlink" href="#next-papers-to-read" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id3">
+<h2>メモ書き<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<section id="introduction">
+<h3>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id4">
+<h3>Introduction<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="ee">
+<h3>ee<a class="headerlink" href="#ee" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="aaa">
+<h3>aaa<a class="headerlink" href="#aaa" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="rere">
+<h3>rere<a class="headerlink" href="#rere" title="Permalink to this heading">¶</a></h3>
+</section>
 </section>
 </section>
 
@@ -73,8 +104,8 @@ The main two differences are (1) MAE does not use any tokenizer, and (2) masked 
 
 <h3>ナビゲーション</h3>
 <p class="caption" role="heading"><span class="caption-text">2022-09:</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Maked Autoencoders Are Scalable Vision Learnears</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="20220903_MAE.html">Maked Autoencoders Are Scalable Vision Learnears</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">2022-08:</span></p>
 <ul>
@@ -93,8 +124,6 @@ The main two differences are (1) MAE does not use any tokenizer, and (2) masked 
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="../index.html" title="前の章へ">Welcome to paper-notes's documentation!</a></li>
-      <li>Next: <a href="../2022-08/20220828_BEIT.html" title="次の章へ">BEIT: BERT Pre-Training of Image Transformers</a></li>
   </ul></li>
 </ul>
 </div>
@@ -128,7 +157,7 @@ The main two differences are (1) MAE does not use any tokenizer, and (2) masked 
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="../_sources/2022-09/20220903_MAE.md.txt"
+      <a href="../_sources/2022-09/20220922_TTT-MAE.md.txt"
           rel="nofollow">Page source</a>
     </div>
 

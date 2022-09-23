@@ -11,6 +11,7 @@ Welcome to paper-notes's documentation!
    :caption: 2022-09:
    
    /2022-09/20220903_MAE.md
+   /2022-09/20220922_TTT-MAE.md
 
 .. toctree::
    :maxdepth: 1

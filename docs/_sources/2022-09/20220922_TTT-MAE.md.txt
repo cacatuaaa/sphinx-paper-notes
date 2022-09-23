@@ -1,0 +1,36 @@
+# Test-Time Training with Masked Autoencoders
+
+## 論文の情報
+
+- Reading date: 2022/09/23
+- Author: Yossi Grandelsman, Yu Sun, Xiniei Chen and Alexei A. Efros
+- Affiliation:UC Berkeley
+- Rating: ★★★☆☆
+- Tag: #Transformer, #Video prediction
+- [Link](__URL__ "Arxiv")
+
+## Overview
+Test-time trainingとはtrainingとtestのデータ分布が異なるときにそのtestデータに対して、新たに一から学習させることなく
+モデルを適応させる手法である。以下略
+## 先行研究との比較
+
+## Key Ideas
+
+## Evaluation method
+
+## Any Discussion
+
+## Next papers to read
+
+## メモ書き
+
+### Introduction
+
+### Introduction
+
+### ee
+
+### aaa
+
+### rere
+
