@@ -28,7 +28,7 @@ BERTで用いられているトークンに対してマスクをかけて、そ�
 Attentionを見てみると、ラベルを付与していないにも関わらず、注目する物体の特徴をよく捉えられていることが明らかになった。
 
 ## Next papers to read
-[1] [Link](https://arxiv.org/abs/2102.12092 "Zero-Shot Text-to-Image Generation")
+[1] [Ramesh et al 2021](https://arxiv.org/abs/2102.12092 "Zero-Shot Text-to-Image Generation")
 ## メモ書き
 
 ### Introduction
