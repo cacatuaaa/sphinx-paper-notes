@@ -15,27 +15,20 @@ BERTで用いられているトークンに対してマスクをかけて、そ�
    ピクセルを直接推定するように学習させると近い距離の依存関係と高い周波数を先に習得して、良い結果にならないということと、VAEを用いたvisual tokenize手法を試している研究。本論文と異なり、zero shot text-to-imageで検証されている。
 ## Key Ideas
 1. Visual Token
-   Ramesh et al., 2021と使われているものをそのまま利用している。画像パッチごとに1-8192のトークンに変換される。このままでは非連続なのでGumble-softmax relaxationを使って微分可能にしている。
+   Ramesh et al., 2021と使われているものをそのまま利用している。画像パッチごとに1-8192のトークンに変換される。このままでは非連続なのでGumble-softmaxを使って微分可能にしている。
 2. Backbone Network
    ViTの論文(Dosovitskiy et al., 2020)と同様にVaswani et al., 2017の標準的なトランスフォーマーを使用。
 3. BEITのPre-Training方法
    40%ぐらいのパッチがマスクされる陽に学習させている。
 ## Evaluation method
-1. Image classifcation
+提案手法で事前学習させて、以下の下流タスクを学習し、その性能を評価している。
+1. Image classification
 2. Semantic segmentation
 ## Any Discussion
+Attentionを見てみると、ラベルを付与していないにも関わらず、注目する物体の特徴をよく捉えられていることが明らかになった。
 
 ## Next papers to read
-
+[1] [Link](https://arxiv.org/abs/2102.12092 "Zero-Shot Text-to-Image Generation")
 ## メモ書き
 
 ### Introduction
-
-### Introduction
-
-### ee
-
-### aaa
-
-### rere
-

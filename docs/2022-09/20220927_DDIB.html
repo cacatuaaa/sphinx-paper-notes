@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>BEIT: BERT Pre-Training of Image Transformers &#8212; paper-notes  ドキュメント</title>
+    <title>Title &#8212; paper-notes  ドキュメント</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
@@ -18,8 +18,6 @@
     <script src="../_static/translations.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
-    <link rel="next" title="NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis" href="../2022-07/20220720_NeRF_original.html" />
-    <link rel="prev" title="Deep Unsupervised Learning using Nonequilibrium Thermodynamics" href="../2022-09/20220926_Diffusion_original.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
@@ -36,60 +34,54 @@
 
           <div class="body" role="main">
             
-  <section id="beit-bert-pre-training-of-image-transformers">
-<h1>BEIT: BERT Pre-Training of Image Transformers<a class="headerlink" href="#beit-bert-pre-training-of-image-transformers" title="この見出しへのパーマリンク">¶</a></h1>
+  <section id="title">
+<h1>Title<a class="headerlink" href="#title" title="この見出しへのパーマリンク">¶</a></h1>
 <section id="id1">
 <h2>論文の情報<a class="headerlink" href="#id1" title="この見出しへのパーマリンク">¶</a></h2>
 <ul class="simple">
 <li><p>Reading date:</p></li>
-<li><p>Author: Hangbo Bao, Li Dong, Furu Wei</p></li>
-<li><p>Affiliation: Microsoft Research</p></li>
-<li><p>Rating: ★★★★★</p></li>
-<li><p>Tag: #Transformer</p></li>
+<li><p>Author:</p></li>
+<li><p>Affiliation:</p></li>
+<li><p>Rating: ★☆☆☆☆</p></li>
+<li><p>Tag: #Transformer, #Video prediction</p></li>
+<li><p><span class="xref myst">Link</span></p></li>
 </ul>
 </section>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="この見出しへのパーマリンク">¶</a></h2>
-<p>BERTで用いられているトークンに対してマスクをかけて、その部分を推定させるという学習手法をViTにも適用させた。画像のピクセルをそのまま推定させるのではなく、tokennizerによってVisual Tokensを作成し、対応するパッチのvisual tokenを推定させるような機構にしている。</p>
 </section>
 <section id="id2">
-<h2>先行研究との比較<a class="headerlink" href="#id2" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>先行研究の問題点<a class="headerlink" href="#id2" title="この見出しへのパーマリンク">¶</a></h2>
 <ol class="arabic simple">
-<li><p>Ramesh et al., 2021
-ピクセルを直接推定するように学習させると近い距離の依存関係と高い周波数を先に習得して、良い結果にならないということと、VAEを用いたvisual tokenize手法を試している研究。本論文と異なり、zero shot text-to-imageで検証されている。</p></li>
+<li><p>学習したペア以外への適用は困難</p></li>
+<li><p>プライバシー保護の観点の欠如、例えば医療画像</p></li>
 </ol>
 </section>
 <section id="key-ideas">
 <h2>Key Ideas<a class="headerlink" href="#key-ideas" title="この見出しへのパーマリンク">¶</a></h2>
-<ol class="arabic simple">
-<li><p>Visual Token
-Ramesh et al., 2021と使われているものをそのまま利用している。画像パッチごとに1-8192のトークンに変換される。このままでは非連続なのでGumble-softmaxを使って微分可能にしている。</p></li>
-<li><p>Backbone Network
-ViTの論文(Dosovitskiy et al., 2020)と同様にVaswani et al., 2017の標準的なトランスフォーマーを使用。</p></li>
-<li><p>BEITのPre-Training方法
-40%ぐらいのパッチがマスクされる陽に学習させている。</p></li>
-</ol>
 </section>
 <section id="evaluation-method">
 <h2>Evaluation method<a class="headerlink" href="#evaluation-method" title="この見出しへのパーマリンク">¶</a></h2>
-<p>提案手法で事前学習させて、以下の下流タスクを学習し、その性能を評価している。</p>
-<ol class="arabic simple">
-<li><p>Image classification</p></li>
-<li><p>Semantic segmentation</p></li>
-</ol>
 </section>
 <section id="any-discussion">
 <h2>Any Discussion<a class="headerlink" href="#any-discussion" title="この見出しへのパーマリンク">¶</a></h2>
-<p>Attentionを見てみると、ラベルを付与していないにも関わらず、注目する物体の特徴をよく捉えられていることが明らかになった。</p>
 </section>
 <section id="next-papers-to-read">
 <h2>Next papers to read<a class="headerlink" href="#next-papers-to-read" title="この見出しへのパーマリンク">¶</a></h2>
-<p>[1] <a class="reference external" href="https://arxiv.org/abs/2102.12092">Link</a></p>
 </section>
 <section id="id3">
 <h2>メモ書き<a class="headerlink" href="#id3" title="この見出しへのパーマリンク">¶</a></h2>
+<p>Style transferの事前学習はあるのかしら</p>
 <section id="introduction">
 <h3>Introduction<a class="headerlink" href="#introduction" title="この見出しへのパーマリンク">¶</a></h3>
+</section>
+<section id="id4">
+<h3>Introduction<a class="headerlink" href="#id4" title="この見出しへのパーマリンク">¶</a></h3>
+</section>
+<section id="ee">
+<h3>ee<a class="headerlink" href="#ee" title="この見出しへのパーマリンク">¶</a></h3>
+<p>###　Next papers to read
+<span class="xref myst">Link</span></p>
 </section>
 </section>
 </section>
@@ -113,13 +105,13 @@ ViTの論文(Dosovitskiy et al., 2020)と同様にVaswani et al., 2017の標準�
 <h3>ナビゲーション</h3>
 <p class="caption" role="heading"><span class="caption-text">2022-09:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../2022-09/20220903_MAE.html">Maked Autoencoders Are Scalable Vision Learnears</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2022-09/20220922_TTT-MAE.html">Test-Time Training with Masked Autoencoders</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../2022-09/20220926_Diffusion_original.html">Deep Unsupervised Learning using Nonequilibrium Thermodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="20220903_MAE.html">Maked Autoencoders Are Scalable Vision Learnears</a></li>
+<li class="toctree-l1"><a class="reference internal" href="20220922_TTT-MAE.html">Test-Time Training with Masked Autoencoders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="20220926_Diffusion_original.html">Deep Unsupervised Learning using Nonequilibrium Thermodynamics</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">2022-08:</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">BEIT: BERT Pre-Training of Image Transformers</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../2022-08/20220828_BEIT.html">BEIT: BERT Pre-Training of Image Transformers</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">2022-07:</span></p>
 <ul>
@@ -134,8 +126,6 @@ ViTの論文(Dosovitskiy et al., 2020)と同様にVaswani et al., 2017の標準�
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="../2022-09/20220926_Diffusion_original.html" title="前の章へ">Deep Unsupervised Learning using Nonequilibrium Thermodynamics</a></li>
-      <li>Next: <a href="../2022-07/20220720_NeRF_original.html" title="次の章へ">NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis</a></li>
   </ul></li>
 </ul>
 </div>
@@ -169,7 +159,7 @@ ViTの論文(Dosovitskiy et al., 2020)と同様にVaswani et al., 2017の標準�
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="../_sources/2022-08/20220828_BEIT.md.txt"
+      <a href="../_sources/2022-09/20220927_DDIB.md.txt"
           rel="nofollow">Page source</a>
     </div>
 

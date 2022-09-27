@@ -1,0 +1,36 @@
+# Title
+
+## 論文の情報
+
+- Reading date:
+- Author:
+- Affiliation:
+- Rating: ★☆☆☆☆
+- Tag: #Transformer, #Video prediction
+- [Link](__URL__ "Arxiv")
+
+## Overview
+
+## 先行研究の問題点
+1. 学習したペア以外への適用は困難
+2. プライバシー保護の観点の欠如、例えば医療画像
+
+## Key Ideas
+
+## Evaluation method
+
+## Any Discussion
+
+## Next papers to read
+
+## メモ書き
+Style transferの事前学習はあるのかしら
+
+### Introduction
+
+### Introduction
+
+### ee
+
+###　Next papers to read
+[Link](f "D")
