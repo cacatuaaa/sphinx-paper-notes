@@ -29,7 +29,5 @@
 
 ### ee
 
-### aaa
-
-### rere
-
+###　Next papers to read
+[Link](https://arxiv.org/pdf/2006.11239.pdf "Denoising Diffusion Probabilistic Models")

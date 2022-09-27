@@ -4,7 +4,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>Maked Autoencoders Are Scalable Vision Learnears &#8212; paper-notes  ドキュメント</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
@@ -14,10 +14,11 @@
     <script src="../_static/underscore.js"></script>
     <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/translations.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
-    <link rel="next" title="BEIT: BERT Pre-Training of Image Transformers" href="../2022-08/20220828_BEIT.html" />
+    <link rel="next" title="Test-Time Training with Masked Autoencoders" href="20220922_TTT-MAE.html" />
     <link rel="prev" title="Welcome to paper-notes&#39;s documentation!" href="../index.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
@@ -36,9 +37,9 @@
           <div class="body" role="main">
             
   <section id="maked-autoencoders-are-scalable-vision-learnears">
-<h1>Maked Autoencoders Are Scalable Vision Learnears<a class="headerlink" href="#maked-autoencoders-are-scalable-vision-learnears" title="Permalink to this heading">¶</a></h1>
+<h1>Maked Autoencoders Are Scalable Vision Learnears<a class="headerlink" href="#maked-autoencoders-are-scalable-vision-learnears" title="この見出しへのパーマリンク">¶</a></h1>
 <section id="id1">
-<h2>論文の情報<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
+<h2>論文の情報<a class="headerlink" href="#id1" title="この見出しへのパーマリンク">¶</a></h2>
 <ul class="simple">
 <li><p>Reading date: 2022/09/03</p></li>
 <li><p>Author: Kaiming He, Xinlei Chen, Saining Xie, Yanghao Li, Piotr Dollár, Ross Girshick</p></li>
@@ -49,7 +50,7 @@
 </ul>
 </section>
 <section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="この見出しへのパーマリンク">¶</a></h2>
 <p>This paper was published just after the BEIT. They did quite similar things to the BEIT, but some parts are different which leads better performances on ImageNet evalation and transfer learning experiments.<br>
 The main two differences are (1) MAE does not use any tokenizer, and (2) masked patches are not input to the encoder.</p>
 </section>
@@ -75,6 +76,8 @@ The main two differences are (1) MAE does not use any tokenizer, and (2) masked 
 <p class="caption" role="heading"><span class="caption-text">2022-09:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Maked Autoencoders Are Scalable Vision Learnears</a></li>
+<li class="toctree-l1"><a class="reference internal" href="20220922_TTT-MAE.html">Test-Time Training with Masked Autoencoders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="20220926_Diffusion_original.html">Deep Unsupervised Learning using Nonequilibrium Thermodynamics</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">2022-08:</span></p>
 <ul>
@@ -94,7 +97,7 @@ The main two differences are (1) MAE does not use any tokenizer, and (2) masked 
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
       <li>Previous: <a href="../index.html" title="前の章へ">Welcome to paper-notes's documentation!</a></li>
-      <li>Next: <a href="../2022-08/20220828_BEIT.html" title="次の章へ">BEIT: BERT Pre-Training of Image Transformers</a></li>
+      <li>Next: <a href="20220922_TTT-MAE.html" title="次の章へ">Test-Time Training with Masked Autoencoders</a></li>
   </ul></li>
 </ul>
 </div>
@@ -124,7 +127,7 @@ The main two differences are (1) MAE does not use any tokenizer, and (2) masked 
       &copy;2022, Cacatuaaa.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.0.2</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.2.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

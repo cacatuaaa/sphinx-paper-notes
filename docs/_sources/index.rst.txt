@@ -12,6 +12,7 @@ Welcome to paper-notes's documentation!
    
    /2022-09/20220903_MAE.md
    /2022-09/20220922_TTT-MAE.md
+   /2022-09/20220926_Diffusion_original.md
 
 .. toctree::
    :maxdepth: 1
