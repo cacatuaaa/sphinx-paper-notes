@@ -1,13 +1,13 @@
-# Title
+# Zero-shot Text-to-Image Generation
 
 ## 論文の情報
 
-- Reading date:
+- Reading date: 2022/09/28
 - Author:
 - Affiliation:
 - Rating: ★☆☆☆☆
 - Tag: #Transformer
-- [Link](__URL__ "Arxiv")
+- [Link]((https://arxiv.org/abs/2102.12092) "Arxiv")
 
 ## Overview
 
